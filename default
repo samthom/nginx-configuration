@@ -1,0 +1,11 @@
+
+// simple configuration of reverse proxy
+
+server {
+    listen  80;
+    servername  www.google.com
+
+    location / {
+        proxy_pass  http://localhost:8080
+    }
+}
